@@ -2,8 +2,7 @@ import java.util.ArrayList;
 
 public abstract class Player {
     private String name;
-    private ArrayList<Integer> guesses;
-
+    private ArrayList<Integer> guesses = new ArrayList<Integer>();
 
     public String getName() {
         return name;
@@ -17,8 +16,8 @@ public abstract class Player {
         return guesses;
     }
 
-    public void setGuesses(ArrayList<Integer> guesses) {
-        this.guesses = guesses;
+    public void setGuess(Integer guess) {
+        this.guesses.add(guess);
     }
 
     public abstract int makeGuess();

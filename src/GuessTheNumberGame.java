@@ -11,52 +11,43 @@ public class GuessTheNumberGame {
         int targetNumber = rand.nextInt(101);
         int numTries = 0;
 
-        boolean game = false;
-        List<Integer> tentativas = new ArrayList<>();
+        System.out.println(targetNumber);
 
+        boolean game = false;
         // Variável para controlar qual jogador está jogando (0 para humano, 1 para computador)
-        int currentPlayer = 0;
+
 
         HumanPlayer humanPlayer = new HumanPlayer();
-
+        ComputerPlayer computerPlayer = new ComputerPlayer();
+        Player currentPlayer = computerPlayer;
         while (!game) {
-            if (currentPlayer == 0) {
-                // Vez do jogador humano
-                int guess = humanPlayer.makeGuess();
-                tentativas.add(guess);
-                numTries++;
-
-                game = checkGuess(guess, targetNumber, game);
-            } else {
-                // Vez do jogador computador
-                int computerGuess = rand.nextInt(101);
-                System.out.println("O jogador computador tentou: " + computerGuess);
-                tentativas.add(computerGuess);
-                numTries++;
-
-                game = checkGuess(computerGuess, targetNumber, game);
-            }
 
             // Alternar entre os jogadores
-            currentPlayer = (currentPlayer + 1) % 2;
+            currentPlayer = (currentPlayer instanceof HumanPlayer) ? computerPlayer : humanPlayer;
+            int guess = currentPlayer.makeGuess();
+            currentPlayer.setGuess(guess);
+            game = checkGuess(currentPlayer, targetNumber);
+
+
         }
 
-        System.out.println("Foram " + numTries + " tentativas:");
+        System.out.println("Foram " + currentPlayer.getGuesses().size() + " tentativas:");
 
-        for (int i = 0; i < tentativas.size(); i++) {
-        System.out.println("Tentativa " + (i + 1) + ": " + tentativas.get(i));
+        for (int i = 0; i < currentPlayer.getGuesses().size(); i++) {
+            System.out.println("Tentativa " + (i + 1) + ": " + currentPlayer.getGuesses().get(i));
         }
     }
 
-    private static boolean checkGuess(int guess, int targetNumber, boolean game) {
+    private static boolean checkGuess(Player player, int targetNumber) {
+        int guess = player.getGuesses().getLast();
         if (guess == targetNumber) {
-            System.out.println("Parabéns, você acertou! O número é " + targetNumber);
-            game = true;
+            System.out.println("Parabéns " + player.getName() + " você acertou! O número é " + targetNumber);
+            return true;
         } else if (guess < targetNumber) {
             System.out.println("Tente um número maior!");
         } else {
             System.out.println("Tente um número menor!");
         }
-        return game;
+        return false;
     }
 }
