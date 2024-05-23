@@ -40,7 +40,7 @@ ao mundo do Java através de um jogo simples e divertido.
 
 ## 3. Funcionalidades
 
-![Demonstração do Guess the number game](src/Assets/guess-the-number-game.gif "Demonstração do Guess the number game")
+![Demonstração do Guess the number game](src/Assets/guess-the-number-game.gif)
 
 - O jogo é realizado no terminal. 
 - É sorteado um número aleatório entre 1 e 100 como número secreto.
