@@ -1,23 +1,20 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 
 public class GuessTheNumberGame {
+    static int targetNumber;
 
     public static void main(String[] args) {
 
-        Random rand = new Random();
-        int targetNumber = rand.nextInt(101);
+        Random random = new Random();
+        targetNumber = random.nextInt(101);
         int numTries = 0;
 
         System.out.println(targetNumber);
 
         boolean game = false;
-        // Variável para controlar qual jogador está jogando (0 para humano, 1 para computador)
 
-
-        HumanPlayer humanPlayer = new HumanPlayer();
+        HumanPlayer humanPlayer = new HumanPlayer("Camila");
         ComputerPlayer computerPlayer = new ComputerPlayer();
         Player currentPlayer = computerPlayer;
         while (!game) {
@@ -26,7 +23,7 @@ public class GuessTheNumberGame {
             currentPlayer = (currentPlayer instanceof HumanPlayer) ? computerPlayer : humanPlayer;
             int guess = currentPlayer.makeGuess();
             currentPlayer.setGuess(guess);
-            game = checkGuess(currentPlayer, targetNumber);
+            game = checkGuess(currentPlayer);
 
 
         }
@@ -38,7 +35,7 @@ public class GuessTheNumberGame {
         }
     }
 
-    private static boolean checkGuess(Player player, int targetNumber) {
+    public static boolean checkGuess(Player player) {
         int guess = player.getGuesses().getLast();
         if (guess == targetNumber) {
             System.out.println("Parabéns " + player.getName() + " você acertou! O número é " + targetNumber);

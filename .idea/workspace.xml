@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eebf5606-12af-407e-99df-2e703f74d5d4" name="Changes" comment="Começo da classe ComputerPlayer">
-      <change afterPath="$PROJECT_DIR$/src/test/GuessTheNumberGameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/GuessTheNumberGameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guess-the-number.iml" beforeDir="false" afterPath="$PROJECT_DIR$/guess-the-number.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GuessTheNumberGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GuessTheNumberGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HumanPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/GuessTheNumberGameTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,39 +38,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ExercicioX.executor": "Run",
-    "Application.GuessTheNumberGame.executor": "Run",
-    "Application.JogoAdivinhaNumero.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.GuessTheNumberGameTest.deveRetornarTenteMenor.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Toshiba/IdeaProjects/guess-the-number",
-    "onboarding.tips.debug.path": "C:/Users/Toshiba/IdeaProjects/guess-the-number/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ExercicioX.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GuessTheNumberGame.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JogoAdivinhaNumero.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.GuessTheNumberGameTest.deveRetornarTenteMenor.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GuessTheNumberGameTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GuessTheNumberGameTest.testCheckGuessTryHigherNumber.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Toshiba/IdeaProjects/GuessTheNumberWeb&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Toshiba/IdeaProjects/guess-the-number/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Toshiba\IdeaProjects\guess-the-number\src" />
+      <recent name="C:\Users\Toshiba\IdeaProjects\guess-the-number\test" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GuessTheNumberGameTest.deveRetornarTenteMenor">
+  <component name="RunManager" selected="JUnit.GuessTheNumberGameTest">
     <configuration name="GuessTheNumberGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GuessTheNumberGame" />
       <module name="guess-the-number" />
@@ -82,9 +94,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="GuessTheNumberGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="guess-the-number" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GuessTheNumberGameTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,12 +119,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GuessTheNumberGameTest.testCheckGuessTryHigherNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="guess-the-number" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GuessTheNumberGameTest" />
+      <option name="METHOD_NAME" value="testCheckGuessTryHigherNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GuessTheNumberGameTest.deveRetornarTenteMenor" />
+        <item itemvalue="JUnit.GuessTheNumberGameTest" />
         <item itemvalue="Application.GuessTheNumberGame" />
+        <item itemvalue="JUnit.GuessTheNumberGameTest.testCheckGuessTryHigherNumber" />
+        <item itemvalue="JUnit.GuessTheNumberGameTest.deveRetornarTenteMenor" />
         <item itemvalue="Application.JogoAdivinhaNumero" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -153,11 +178,6 @@
           <url>file://$PROJECT_DIR$/src/HumanPlayer.java</url>
           <line>3</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/GuessTheNumberGame.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

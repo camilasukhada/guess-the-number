@@ -10,7 +10,7 @@ public class HumanPlayer extends Player{
         return input.nextInt();
     }
 
-    public HumanPlayer() {
-        this.setName("Jogador humano");
+    public HumanPlayer(String name) {
+        this.setName(name);
     }
 }
