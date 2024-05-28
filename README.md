@@ -121,7 +121,7 @@ manutenção e possíveis extensões do jogo no futuro.
 
  - ### Configuração do ambiente do ambiente de desenvolvimento integrado (IDE) com IntelliJ.
 
- - ### Familirização com od primeiros conceitos da linguagem. 
+ - ### Familirização com os primeiros conceitos da linguagem. 
 
 
 
